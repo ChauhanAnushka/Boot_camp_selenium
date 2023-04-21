@@ -3,11 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="wait.explicit_waitTest">
+      <class name="Framework.TestTest">
         <methods>
-          <include name="f"/>
+          <include name="createAccount"/>
+          <include name="createA"/>
+          <include name="cAccount"/>
+          <include name="createAcc"/>
+          <include name="createdd"/>
+          <include name="Account"/>
+          <include name="created"/>
+          <include name="create"/>
+          <include name="createe"/>
         </methods>
-      </class> <!-- wait.explicit_waitTest -->
+      </class> <!-- Framework.TestTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -12,37 +12,50 @@ import org.testng.annotations.Test;
 
 public class all_annotationsTest {
 	@BeforeSuite
-	void browser() {
-		System.out.println("opened the url");
+	void BSuite() {
+		System.out.println("This is Before Suite");
 	}
+	@BeforeTest
+	 public void BTest() {
+		 System.out.println("This is before Test");
+	 }
 	@BeforeClass
-	void login() {
-		System.out.println("login");
-	} @BeforeMethod
-	  public void credentials() {
-		  System.out.println("Enter credentials");
+	void BClass() {
+		System.out.println("This is before Class");
+	}
+	@BeforeMethod
+	  public void BMethod() {
+		  System.out.println("This is before Method");
 	  }
-	 @BeforeTest
-	 public void search() {
-		 System.out.println("Search");
-	 }
+	 @Test
+	public void test() {
+		  System.out.println("This is Test");
+	  }
 	 @AfterMethod
-	 public void Logout() {
-		 System.out.println("logout");
-	 }
-	 public void Login() {
-		 System.out.println("login");
-	 }
-	 @AfterTest
-	 public void Advsearch() {
-		 System.out.println("Advanced Search after test");
+	 public void AMethod() {
+		 System.out.println("This is after Method");
 	 }
 	 @AfterClass
-	 public void logout() {
-		 System.out.println("logout"); 
+	 public void AClass() {
+		 System.out.println("This is after Class"); 
+	 }
+	 @AfterTest
+	 public void ATest() {
+		 System.out.println("This is after Test");
 	 }
 	 @AfterSuite
-	 void exit() {
-		 System.out.println(" exit from page");
+	 void ASuite() {
+		 System.out.println("This is after Suite");
 	 }
 }
+
+//Sequence of the annotations
+//@BeforeSuite
+//@BeforeTest
+//@BeforeClass
+//@BeforeMethod
+//@Test
+//@AfterMethod
+//@AfterClass
+//@AfterTest
+//@AfterSuite
